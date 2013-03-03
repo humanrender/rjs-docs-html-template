@@ -1,0 +1,53 @@
+%inline-block{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+}
+
+// Colors
+
+$white:#fff;
+%white{
+  color:$white;
+}
+@mixin white{
+  color:$white;
+}
+
+$orange:#ffdacf;
+%orange{
+  color:$orange;
+}
+@mixin orange{
+  color:$orange;
+}
+
+$light_grey:#989ea8;
+%light_grey{
+  color:$light_grey;
+}
+@mixin light_grey{
+  color:$light_grey;
+}
+
+$dark_grey:#646d7c;
+%dark_grey{
+  color:$dark_grey;
+}
+@mixin dark_grey{
+  color:$dark_grey;
+}
+
+
+%text{
+  margin:0;
+  line-height:$base_line_height * .5;
+  font-size:12px;
+  padding-bottom:4px;
+}
+
+// border-spacing: 
+
+%bb_orange{
+  border-bottom: 1px solid $orange;
+}

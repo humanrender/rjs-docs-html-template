@@ -1,0 +1,118 @@
+// Layout utils
+
+
+$blh2:$base_line_height * 2;
+
+%plm { padding-left:20px; }
+%prm { padding-right:20px; }
+
+%plb { padding-left:40px; }
+%prb { padding-right:40px; }
+%phb { 
+  @extend %plb;
+  @extend %prb;
+}
+
+.accessible{
+  display:none!important;
+}
+
+// Main layout
+
+body{
+  font-size:$base_line_height;
+}
+
+$nav_width:214px;
+
+[role=navigation]{
+  background-color:#253146;
+  @extend %white;
+
+  float:left;
+
+  width:$nav_width;
+
+  .navigation_links{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+    > li{
+      margin:0;
+      padding:0;
+    }
+
+  }
+
+  .navigation_title{
+    background-color:#444e60;
+    
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    @extend %plm;
+
+    font-size:14px;
+  }
+
+  .resource a, .resource_type{
+
+    display: block;
+
+    line-height:$blh2;
+    font-size:13px;
+    text-decoration: none;
+
+
+
+  }
+
+  .resource_type{
+    background-color:#303c4f;
+
+    @extend %white;
+
+    @extend %plm;
+    padding-top: 7px;
+    padding-bottom: 5px;
+  }
+
+  .resources_list{
+    list-style:none;
+    padding-left:0;
+  }
+  .resource{
+    @extend %plb;
+    @extend %prb;
+    border-bottom:1px solid #212c3f;
+  }
+  .resource a{
+    padding-top: 7px;
+    padding-bottom: 4px;
+    color:#d3d6da;
+  }
+
+  .resource + .resource{
+    border-top:1px solid #2c374c;
+  }
+
+  .resource + .resource a{
+    padding-top:6px;
+  }
+
+  .navigation_title, .resource, .resource_type{
+    background-image:image_url("backgrounds/bg_nav_links.png");
+    background-repeat:repeat-y;
+    background-position: right top;
+  }
+}
+
+[role="main"]{
+  padding-left:$nav_width;
+}
+
+.project_details{
+  > *{
+    @extend %phb;
+  }
+}

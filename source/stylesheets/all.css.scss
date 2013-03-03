@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+$base_line_height:12px;
+
+@import "partials/mixins";
+@import "partials/normalize";
+@import "partials/prototypes";
+@import "partials/layout";
+
+.project_name h1{
+  @extend %bb_orange;
+
+  color:#858B97;
+
+  padding-top:51px;
+  padding-bottom:20px;
+  @extend %plb;
+  @extend %prb;
+
+  margin:0;
+
+  font-size:$blh2;
+  line-height:$blh2;
+
+  span{
+    font-weight:300;
+  }
+}
+
+.project_description{
+  @extend %bb_orange;
+  @extend %plb;
+  @extend %prb;
+  padding-bottom:39px;
+  p{
+    @extend %text;
+    @extend %light_grey;
+    line-height:$blh2;
+
+    padding-top:32px;
+    padding-bottom:15px;
+  }
+  .show_more{
+    margin-top:-4px;
+  }
+}
+
+.show_more{
+  background-color:#f0f1f3;
+  color:#b5b9b0;
+  padding:3px 6px 4px;
+  @extend %inline-block;
+  border-radius:3px;
+  text-decoration: none;
+}
+
+.m-header{
+  @extend %dark_grey;
+
+  margin:0;
+
+  padding-top:39px;
+  padding-bottom:38px;
+
+  font-size:24px;
+  line-height:24px;
+}
+
+.m-subheader{
+  @extend %dark_grey;
+  font-size:20px;
+  line-height:24px;
+  margin:0;
+  padding-top:0;
+  padding-bottom:7px;
+}
+
+.m-text{
+  font-size:16px;
+  line-height:24px;
+  padding-top:6px;
+  padding-bottom:11px;
+  @extend %light_grey;
+  p{
+    margin:0;
+  }
+}
+
+[role=main]{
+}
+
