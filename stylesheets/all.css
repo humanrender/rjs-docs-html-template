@@ -482,7 +482,7 @@ body {
     padding-top: 6px; }
   /* line 108, partials/_layout.css.scss */
   [role=navigation] .navigation_title, [role=navigation] .resource, [role=navigation] .resource_type {
-    background-image: url('/images/backgrounds/bg_nav_links.png');
+    background-image: url('../images/backgrounds/bg_nav_links.png');
     background-repeat: repeat-y;
     background-position: right top; }
 
