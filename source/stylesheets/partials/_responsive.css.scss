@@ -1,0 +1,23 @@
+/*  Mobile devices Layout: 768px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+  @import "partials/responsive/mobile_devices";
+}
+
+/*  Tablet Layout: 768px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  @import "partials/responsive/tablet";
+}
+
+/*  Mobile Layout: 320px.
+    Inherits styles from: Default Layout.
+---------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  @import "partials/responsive/mobile";
+}

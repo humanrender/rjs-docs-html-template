@@ -1,0 +1,60 @@
+/* keyframes for slidein from sides */
+@-webkit-keyframes slide_in {
+  from { -webkit-transform: translateX(-150px); }
+  to { -webkit-transform: translateX(0); }
+}
+@-webkit-keyframes slide_out {
+  from { -webkit-transform: translateX(0); }
+  to { -webkit-transform: translateX(-150px); }
+}
+
+@-moz-keyframes slide_in {
+  from { -webkit-transform: translateX(-150px); }
+  to { -webkit-transform: translateX(0); }
+}
+@-moz-keyframes slide_out {
+  from { -webkit-transform: translateX(0); }
+  to { -webkit-transform: translateX(-150px); }
+}
+
+keyframes slide_in {
+  from { transform: translateX(-150px); }
+  to { transform: translateX(0); }
+}
+keyframes slide_out {
+  from { transform: translateX(0); }
+  to { transform: translateX(-150px); }
+}
+
+
+body{
+  background-position:-150px top;
+
+  @include prefixer("transition",background-position .5s ease-out);
+}
+
+[role = navigation], [role = main]{
+  @include prefixer(transform, translateX(-150px));
+  @include prefixer(animation-timing-function, ease-out);
+  @include prefixer(animation-duration, .5s);
+}
+
+
+.side_panel_visible{
+
+  background-position:0 top;
+
+  [role = navigation], [role = main]{
+    @include prefixer(transform, translateX(0));
+    @include prefixer(animation-name, slide_in);
+  }
+}
+
+.side_panel_hidden{
+  background-position:-150px top;
+
+  [role = navigation], [role = main]{
+    @include prefixer(transform, translateX(-150px));
+    @include prefixer(animation-name, slide_out);
+  }
+}
