@@ -67,7 +67,7 @@ html {
 /* line 74, partials/_normalize.css.scss */
 body {
   margin: 0;
-  background-image: url('/images/backgrounds/bg_nav.png');
+  background-image: url('../images/backgrounds/bg_nav.png');
   background-repeat: repeat-y; }
 
 /* ==========================================================================
@@ -481,7 +481,7 @@ body {
     padding-top: 6px; }
   /* line 106, partials/_layout.css.scss */
   [role=navigation] .navigation_title, [role=navigation] .resource, [role=navigation] .resource_type {
-    background-image: url('/images/backgrounds/bg_nav_links.png');
+    background-image: url('../images/backgrounds/bg_nav_links.png');
     background-repeat: repeat-y;
     background-position: right top; }
 
@@ -641,60 +641,56 @@ pre {
 @media only screen and (max-width: 991px) {
   /* keyframes for slidein from sides */
   @-webkit-keyframes slide_in {
-    /* line 6, partials/responsive/_mobile_devices.css.scss */
+    /* line 4, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(-150px); }
 
-    /* line 7, partials/responsive/_mobile_devices.css.scss */
+    /* line 5, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(0); } }
 
   @-webkit-keyframes slide_out {
-    /* line 10, partials/responsive/_mobile_devices.css.scss */
+    /* line 8, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(0); }
 
-    /* line 11, partials/responsive/_mobile_devices.css.scss */
+    /* line 9, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(-150px); } }
 
   @-moz-keyframes slide_in {
-    /* line 15, partials/responsive/_mobile_devices.css.scss */
+    /* line 13, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(-150px); }
 
-    /* line 16, partials/responsive/_mobile_devices.css.scss */
+    /* line 14, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(0); } }
 
   @-moz-keyframes slide_out {
-    /* line 19, partials/responsive/_mobile_devices.css.scss */
+    /* line 17, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(0); }
 
-    /* line 20, partials/responsive/_mobile_devices.css.scss */
+    /* line 18, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(-150px); } }
 
-  @keyframes slide_in {
-    /* line 24, partials/responsive/_mobile_devices.css.scss */
-    from {
-      transform: translateX(-150px); }
+  /* line 22, partials/responsive/_mobile_devices.css.scss */
+  keyframes slide_in from {
+    transform: translateX(-150px); }
+  /* line 23, partials/responsive/_mobile_devices.css.scss */
+  keyframes slide_in to {
+    transform: translateX(0); }
 
-    /* line 25, partials/responsive/_mobile_devices.css.scss */
-    to {
-      transform: translateX(0); } }
+  /* line 26, partials/responsive/_mobile_devices.css.scss */
+  keyframes slide_out from {
+    transform: translateX(0); }
+  /* line 27, partials/responsive/_mobile_devices.css.scss */
+  keyframes slide_out to {
+    transform: translateX(-150px); }
 
-  @keyframes slide_out {
-    /* line 28, partials/responsive/_mobile_devices.css.scss */
-    from {
-      transform: translateX(0); }
-
-    /* line 29, partials/responsive/_mobile_devices.css.scss */
-    to {
-      transform: translateX(-150px); } }
-
-  /* line 33, partials/responsive/_mobile_devices.css.scss */
+  /* line 31, partials/responsive/_mobile_devices.css.scss */
   body {
     background-position: -150px top;
     -webkit-transition: background-position 0.5s ease-out;
@@ -703,7 +699,7 @@ pre {
     -o-transition: background-position 0.5s ease-out;
     transition: background-position 0.5s ease-out; }
 
-  /* line 39, partials/responsive/_mobile_devices.css.scss */
+  /* line 37, partials/responsive/_mobile_devices.css.scss */
   [role=navigation], [role=main] {
     -webkit-transform: translateX(-150px);
     -moz-transform: translateX(-150px);
@@ -721,10 +717,10 @@ pre {
     -o-animation-duration: 0.5s;
     animation-duration: 0.5s; }
 
-  /* line 46, partials/responsive/_mobile_devices.css.scss */
+  /* line 44, partials/responsive/_mobile_devices.css.scss */
   .side_panel_visible {
     background-position: 0 top; }
-    /* line 50, partials/responsive/_mobile_devices.css.scss */
+    /* line 48, partials/responsive/_mobile_devices.css.scss */
     .side_panel_visible [role=navigation], .side_panel_visible [role=main] {
       -webkit-transform: translateX(0);
       -moz-transform: translateX(0);
@@ -737,10 +733,10 @@ pre {
       -o-animation-name: slide_in;
       animation-name: slide_in; }
 
-  /* line 56, partials/responsive/_mobile_devices.css.scss */
+  /* line 54, partials/responsive/_mobile_devices.css.scss */
   .side_panel_hidden {
     background-position: -150px top; }
-    /* line 59, partials/responsive/_mobile_devices.css.scss */
+    /* line 57, partials/responsive/_mobile_devices.css.scss */
     .side_panel_hidden [role=navigation], .side_panel_hidden [role=main] {
       -webkit-transform: translateX(-150px);
       -moz-transform: translateX(-150px);
