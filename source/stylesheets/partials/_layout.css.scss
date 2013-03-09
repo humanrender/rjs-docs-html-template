@@ -29,7 +29,9 @@ $nav_width:214px;
   background-color:#253146;
   @extend %white;
 
-  float:left;
+  position:absolute;
+  top:0;
+  left: 0;
 
   width:$nav_width;
 
@@ -112,6 +114,7 @@ $nav_width:214px;
 }
 
 .project_details{
+  padding-bottom:60px;
   > *{
     @extend %phb;
   }

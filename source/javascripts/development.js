@@ -1,23 +1,42 @@
-(function(increment, color, opacity){
-  var wheight = $("body").height(),
-      container = $("<div id='v-grid-container'></div>"),
-      y = 0,
-      grid;
-  $("body").append(container.css({
+$(window).load(function(){
+
+      // Vertical grid properties
+  var vincrement = 12, 
+      vgrid_color = "#ce0", 
+      vopacity = 0.2,
+
+      // Vertical grid container
+      vcontainer = $("<div id='v-grid-container'></div>");
+
+  $("body").append(vcontainer.css({
     "-webkit-user-select":"none"
   }));
-  while(y < wheight){
-    y += increment;
-    grid = $("<span></span>");
-    container.append(grid);
-    grid.css({
-      "border-bottom":"1px solid "+color,
-      position:"absolute",
-      top:y+"px",
-      left:0,
-      width:"100%",
-      "-webkit-user-select":"none",
-      opacity:opacity
-    })
+
+  var build_vertical_grid = function(increment, color, opacity){
+    var wheight = $("body").height(),
+        y = 0,
+        grid;
+    
+    while(y < wheight){
+      y += increment;
+      grid = $("<span></span>");
+      vcontainer.append(grid);
+      grid.css({
+        "border-bottom":"1px solid "+color,
+        position:"absolute",
+        top:y+"px",
+        left:0,
+        width:"100%",
+        "-webkit-user-select":"none",
+        opacity:opacity
+      })
+    }
   }
-})(12, "#ce0", 0.2); // Vertical grid
+
+  build_vertical_grid(vincrement, vgrid_color, vopacity);
+
+  $(window).on("resize", function(){
+    vcontainer.html("")
+    build_vertical_grid(vincrement, vgrid_color, vopacity);
+  })
+})

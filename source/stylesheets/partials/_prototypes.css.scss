@@ -51,3 +51,34 @@ $dark_grey:#646d7c;
 %bb_orange{
   border-bottom: 1px solid $orange;
 }
+
+%argument-property{
+  @extend %white;
+  border-radius: 2px;
+  padding:0px 4px;
+  margin-left:3px;
+
+  position: relative;
+  top: 1px;
+}
+
+%clearfix{
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  &:after {
+      clear: both;
+  }
+
+  *zoom: 1;
+}
+
+%expandable{
+  display:none;
+  .expanded &{
+    display:block;
+  }
+}
