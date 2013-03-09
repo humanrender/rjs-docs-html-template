@@ -67,8 +67,7 @@ html {
 /* line 74, partials/_normalize.css.scss */
 body {
   margin: 0;
-  background-image: url('../images/backgrounds/bg_nav.png');
-  background-repeat: repeat-y; }
+  -webkit-font-smoothing: antialiased; }
 
 /* ==========================================================================
    Links
@@ -76,14 +75,14 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 88, partials/_normalize.css.scss */
+/* line 89, partials/_normalize.css.scss */
 a:focus {
   outline: thin dotted; }
 
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 97, partials/_normalize.css.scss */
+/* line 98, partials/_normalize.css.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -95,21 +94,21 @@ a:hover {
  * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
  * Safari 5, and Chrome.
  */
-/* line 110, partials/_normalize.css.scss */
+/* line 111, partials/_normalize.css.scss */
 h1 {
   font-size: 2em; }
 
 /*
  * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 118, partials/_normalize.css.scss */
+/* line 119, partials/_normalize.css.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 127, partials/_normalize.css.scss */
+/* line 128, partials/_normalize.css.scss */
 b,
 strong {
   font-weight: bold; }
@@ -117,14 +116,14 @@ strong {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 135, partials/_normalize.css.scss */
+/* line 136, partials/_normalize.css.scss */
 dfn {
   font-style: italic; }
 
 /*
  * Addresses styling not present in IE 8/9.
  */
-/* line 143, partials/_normalize.css.scss */
+/* line 144, partials/_normalize.css.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -132,7 +131,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 156, partials/_normalize.css.scss */
+/* line 157, partials/_normalize.css.scss */
 code,
 kbd,
 pre,
@@ -143,7 +142,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 165, partials/_normalize.css.scss */
+/* line 166, partials/_normalize.css.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -152,21 +151,21 @@ pre {
 /*
  * Sets consistent quote types.
  */
-/* line 175, partials/_normalize.css.scss */
+/* line 176, partials/_normalize.css.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 183, partials/_normalize.css.scss */
+/* line 184, partials/_normalize.css.scss */
 small {
   font-size: 80%; }
 
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 192, partials/_normalize.css.scss */
+/* line 193, partials/_normalize.css.scss */
 sub,
 sup {
   font-size: 75%;
@@ -174,11 +173,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 199, partials/_normalize.css.scss */
+/* line 200, partials/_normalize.css.scss */
 sup {
   top: -0.5em; }
 
-/* line 203, partials/_normalize.css.scss */
+/* line 204, partials/_normalize.css.scss */
 sub {
   bottom: -0.25em; }
 
@@ -188,14 +187,14 @@ sub {
 /*
  * Removes border when inside `a` element in IE 8/9.
  */
-/* line 215, partials/_normalize.css.scss */
+/* line 216, partials/_normalize.css.scss */
 img {
   border: 0; }
 
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 223, partials/_normalize.css.scss */
+/* line 224, partials/_normalize.css.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -205,7 +204,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 8/9 and Safari 5.
  */
-/* line 235, partials/_normalize.css.scss */
+/* line 236, partials/_normalize.css.scss */
 figure {
   margin: 0; }
 
@@ -215,7 +214,7 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 247, partials/_normalize.css.scss */
+/* line 248, partials/_normalize.css.scss */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
@@ -225,7 +224,7 @@ fieldset {
  * 1. Corrects color not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 258, partials/_normalize.css.scss */
+/* line 259, partials/_normalize.css.scss */
 legend {
   border: 0;
   /* 1 */
@@ -237,7 +236,7 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 272, partials/_normalize.css.scss */
+/* line 273, partials/_normalize.css.scss */
 button,
 input,
 select,
@@ -253,7 +252,7 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 284, partials/_normalize.css.scss */
+/* line 285, partials/_normalize.css.scss */
 button,
 input {
   line-height: normal; }
@@ -265,7 +264,7 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 299, partials/_normalize.css.scss */
+/* line 300, partials/_normalize.css.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -278,7 +277,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 309, partials/_normalize.css.scss */
+/* line 310, partials/_normalize.css.scss */
 button[disabled],
 input[disabled] {
   cursor: default; }
@@ -287,7 +286,7 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 319, partials/_normalize.css.scss */
+/* line 320, partials/_normalize.css.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -300,7 +299,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 330, partials/_normalize.css.scss */
+/* line 331, partials/_normalize.css.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -313,7 +312,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 343, partials/_normalize.css.scss */
+/* line 344, partials/_normalize.css.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -321,7 +320,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 352, partials/_normalize.css.scss */
+/* line 353, partials/_normalize.css.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -331,7 +330,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 362, partials/_normalize.css.scss */
+/* line 363, partials/_normalize.css.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -344,7 +343,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 375, partials/_normalize.css.scss */
+/* line 376, partials/_normalize.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -424,74 +423,85 @@ table {
 
 /* line 22, partials/_layout.css.scss */
 body {
-  font-size: 12px; }
+  font-size: 12px;
+  position: relative; }
 
-/* line 28, partials/_layout.css.scss */
+/* line 29, partials/_layout.css.scss */
 [role=navigation] {
   background-color: #253146;
+  min-height: 100%;
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   width: 214px; }
-  /* line 39, partials/_layout.css.scss */
+  /* line 41, partials/_layout.css.scss */
   [role=navigation] .navigation_links {
     margin: 0;
     padding-left: 0;
     list-style: none; }
-    /* line 43, partials/_layout.css.scss */
+    /* line 45, partials/_layout.css.scss */
     [role=navigation] .navigation_links > li {
       margin: 0;
       padding: 0; }
-  /* line 50, partials/_layout.css.scss */
+  /* line 52, partials/_layout.css.scss */
   [role=navigation] .navigation_title {
     background-color: #444e60;
     display: block;
     padding-top: 20px;
     padding-bottom: 21px;
     font-size: 14px; }
-  /* line 61, partials/_layout.css.scss */
+  /* line 63, partials/_layout.css.scss */
   [role=navigation] .resource a, [role=navigation] .resource_type {
     display: block;
     line-height: 24px;
     font-size: 13px;
     text-decoration: none; }
-  /* line 73, partials/_layout.css.scss */
+  /* line 75, partials/_layout.css.scss */
   [role=navigation] .resource_type {
     background-color: #303c4f;
     padding-top: 7px;
     padding-bottom: 5px; }
-  /* line 83, partials/_layout.css.scss */
+  /* line 85, partials/_layout.css.scss */
   [role=navigation] .resources_list {
     list-style: none;
     padding-left: 0; }
-  /* line 87, partials/_layout.css.scss */
+  /* line 89, partials/_layout.css.scss */
   [role=navigation] .resource {
     border-bottom: 1px solid #212c3f; }
-  /* line 92, partials/_layout.css.scss */
+  /* line 94, partials/_layout.css.scss */
   [role=navigation] .resource a {
     padding-top: 7px;
     padding-bottom: 4px;
     color: #d3d6da; }
-  /* line 98, partials/_layout.css.scss */
+  /* line 100, partials/_layout.css.scss */
   [role=navigation] .resource + .resource {
     border-top: 1px solid #2c374c; }
-  /* line 102, partials/_layout.css.scss */
+  /* line 104, partials/_layout.css.scss */
   [role=navigation] .resource + .resource a {
     padding-top: 6px; }
-  /* line 106, partials/_layout.css.scss */
+  /* line 108, partials/_layout.css.scss */
   [role=navigation] .navigation_title, [role=navigation] .resource, [role=navigation] .resource_type {
-    background-image: url('../images/backgrounds/bg_nav_links.png');
+    background-image: url('/images/backgrounds/bg_nav_links.png');
     background-repeat: repeat-y;
     background-position: right top; }
 
-/* line 113, partials/_layout.css.scss */
+/* line 115, partials/_layout.css.scss */
 [role="main"] {
   padding-left: 214px; }
 
-/* line 117, partials/_layout.css.scss */
+/* line 119, partials/_layout.css.scss */
 .project_details {
   padding-bottom: 60px; }
+
+/* line 126, partials/_layout.css.scss */
+.nav-toggle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: white;
+  right: 12px;
+  top: 12px; }
 
 /* line 1, partials/_styles.css.scss */
 .project_name h1 {
@@ -641,113 +651,111 @@ pre {
 @media only screen and (max-width: 991px) {
   /* keyframes for slidein from sides */
   @-webkit-keyframes slide_in {
-    /* line 4, partials/responsive/_mobile_devices.css.scss */
-    from {
-      -webkit-transform: translateX(-150px); }
-
     /* line 5, partials/responsive/_mobile_devices.css.scss */
+    from {
+      -webkit-transform: translateX(-154px); }
+
+    /* line 6, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(0); } }
 
   @-webkit-keyframes slide_out {
-    /* line 8, partials/responsive/_mobile_devices.css.scss */
+    /* line 9, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(0); }
 
-    /* line 9, partials/responsive/_mobile_devices.css.scss */
+    /* line 10, partials/responsive/_mobile_devices.css.scss */
     to {
-      -webkit-transform: translateX(-150px); } }
+      -webkit-transform: translateX(-154px); } }
 
   @-moz-keyframes slide_in {
-    /* line 13, partials/responsive/_mobile_devices.css.scss */
-    from {
-      -webkit-transform: translateX(-150px); }
-
     /* line 14, partials/responsive/_mobile_devices.css.scss */
+    from {
+      -webkit-transform: translateX(-154px); }
+
+    /* line 15, partials/responsive/_mobile_devices.css.scss */
     to {
       -webkit-transform: translateX(0); } }
 
   @-moz-keyframes slide_out {
-    /* line 17, partials/responsive/_mobile_devices.css.scss */
+    /* line 18, partials/responsive/_mobile_devices.css.scss */
     from {
       -webkit-transform: translateX(0); }
 
-    /* line 18, partials/responsive/_mobile_devices.css.scss */
+    /* line 19, partials/responsive/_mobile_devices.css.scss */
     to {
-      -webkit-transform: translateX(-150px); } }
+      -webkit-transform: translateX(-154px); } }
 
-  /* line 22, partials/responsive/_mobile_devices.css.scss */
-  keyframes slide_in from {
-    transform: translateX(-150px); }
-  /* line 23, partials/responsive/_mobile_devices.css.scss */
-  keyframes slide_in to {
-    transform: translateX(0); }
+  @keyframes slide_in {
+    /* line 23, partials/responsive/_mobile_devices.css.scss */
+    from {
+      transform: translateX(-154px); }
 
-  /* line 26, partials/responsive/_mobile_devices.css.scss */
-  keyframes slide_out from {
-    transform: translateX(0); }
-  /* line 27, partials/responsive/_mobile_devices.css.scss */
-  keyframes slide_out to {
-    transform: translateX(-150px); }
+    /* line 24, partials/responsive/_mobile_devices.css.scss */
+    to {
+      transform: translateX(0); } }
 
-  /* line 31, partials/responsive/_mobile_devices.css.scss */
-  body {
-    background-position: -150px top;
-    -webkit-transition: background-position 0.5s ease-out;
-    -moz-transition: background-position 0.5s ease-out;
-    -ms-transition: background-position 0.5s ease-out;
-    -o-transition: background-position 0.5s ease-out;
-    transition: background-position 0.5s ease-out; }
+  @keyframes slide_out {
+    /* line 27, partials/responsive/_mobile_devices.css.scss */
+    from {
+      transform: translateX(0); }
 
-  /* line 37, partials/responsive/_mobile_devices.css.scss */
+    /* line 28, partials/responsive/_mobile_devices.css.scss */
+    to {
+      transform: translateX(-154px); } }
+
+  /* line 32, partials/responsive/_mobile_devices.css.scss */
   [role=navigation], [role=main] {
-    -webkit-transform: translateX(-150px);
-    -moz-transform: translateX(-150px);
-    -ms-transform: translateX(-150px);
-    -o-transform: translateX(-150px);
-    transform: translateX(-150px);
+    -webkit-transform: translateX(-154px);
+    -moz-transform: translateX(-154px);
+    -ms-transform: translateX(-154px);
+    -o-transform: translateX(-154px);
+    transform: translateX(-154px);
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
     -ms-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s; }
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -ms-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
 
-  /* line 44, partials/responsive/_mobile_devices.css.scss */
-  .side_panel_visible {
-    background-position: 0 top; }
-    /* line 48, partials/responsive/_mobile_devices.css.scss */
-    .side_panel_visible [role=navigation], .side_panel_visible [role=main] {
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0);
-      -webkit-animation-name: slide_in;
-      -moz-animation-name: slide_in;
-      -ms-animation-name: slide_in;
-      -o-animation-name: slide_in;
-      animation-name: slide_in; }
+  /* line 40, partials/responsive/_mobile_devices.css.scss */
+  [role=main] {
+    margin-right: -154px; }
 
-  /* line 54, partials/responsive/_mobile_devices.css.scss */
-  .side_panel_hidden {
-    background-position: -150px top; }
-    /* line 57, partials/responsive/_mobile_devices.css.scss */
-    .side_panel_hidden [role=navigation], .side_panel_hidden [role=main] {
-      -webkit-transform: translateX(-150px);
-      -moz-transform: translateX(-150px);
-      -ms-transform: translateX(-150px);
-      -o-transform: translateX(-150px);
-      transform: translateX(-150px);
-      -webkit-animation-name: slide_out;
-      -moz-animation-name: slide_out;
-      -ms-animation-name: slide_out;
-      -o-animation-name: slide_out;
-      animation-name: slide_out; } }
+  /* line 47, partials/responsive/_mobile_devices.css.scss */
+  .side_panel_visible [role=navigation], .side_panel_visible [role=main] {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation-name: slide_in;
+    -moz-animation-name: slide_in;
+    -ms-animation-name: slide_in;
+    -o-animation-name: slide_in;
+    animation-name: slide_in; }
+
+  /* line 55, partials/responsive/_mobile_devices.css.scss */
+  .side_panel_hidden [role=navigation], .side_panel_hidden [role=main] {
+    -webkit-transform: translateX(-154px);
+    -moz-transform: translateX(-154px);
+    -ms-transform: translateX(-154px);
+    -o-transform: translateX(-154px);
+    transform: translateX(-154px);
+    -webkit-animation-name: slide_out;
+    -moz-animation-name: slide_out;
+    -ms-animation-name: slide_out;
+    -o-animation-name: slide_out;
+    animation-name: slide_out; } }
 /*  Tablet Layout: 768px.
     Inherits styles from: Default Layout.
 -----------------------------------------------------------------*/
