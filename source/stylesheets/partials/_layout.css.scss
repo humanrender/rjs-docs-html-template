@@ -21,6 +21,7 @@ $blh2:$base_line_height * 2;
 
 body{
   font-size:$base_line_height;
+  position:relative;
 }
 
 $nav_width:214px;
@@ -28,6 +29,7 @@ $nav_width:214px;
 [role=navigation]{
   background-color:#253146;
   @extend %white;
+  min-height:100%;
 
   position:absolute;
   z-index:1;
@@ -119,4 +121,13 @@ $nav_width:214px;
   > *{
     @extend %phb;
   }
+}
+
+.nav-toggle{
+  position:absolute;
+  width:36px;
+  height:36px;
+  background:white;
+  right:12px;
+  top:12px;
 }

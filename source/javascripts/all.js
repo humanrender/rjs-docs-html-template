@@ -11,6 +11,7 @@ $(document).on("ready", function(){
   $('pre.code-example code').each(function(i, e) {hljs.highlightBlock(e)});
 
   new SidePanel($("body"),{
-    panel:$("[role=navigation]")
+    panel:$("[role=navigation]"),
+    toggle: $("[role=navigation] [data-toggle]")
   })
 })

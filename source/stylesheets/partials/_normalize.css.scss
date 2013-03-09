@@ -72,8 +72,9 @@ html {
 
 body {
   margin: 0;
-  background-image:image_url("backgrounds/bg_nav.png");
-  background-repeat:repeat-y;
+  -webkit-font-smoothing: antialiased;
+  // background-image:image_url("backgrounds/bg_nav.png");
+  // background-repeat:repeat-y;
 }
 
 /* ==========================================================================
