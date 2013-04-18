@@ -1,4 +1,4 @@
-.project_name h1{
+.project_name{
   @extend %bb_orange;
 
   color:#858B97;
@@ -20,10 +20,16 @@
 
 .project_description{
   @extend %bb_orange;
-  @extend %plb;
-  @extend %prb;
+  
   padding-bottom:39px;
+
+  %project_description_children{
+    @extend %mlb;
+    @extend %mrb;
+  }
+
   p{
+    @extend %project_description_children;
     @extend %text;
     @extend %light_grey;
     line-height:$blh2;
@@ -32,6 +38,7 @@
     padding-bottom:15px;
   }
   .show_more{
+    @extend %project_description_children;
     margin-top:-4px;
   }
 }
@@ -51,10 +58,26 @@
   margin:0;
 
   padding-top:39px;
-  padding-bottom:38px;
+  // padding-bottom:38px;
 
   font-size:24px;
   line-height:24px;
+}
+
+.declared-at, .dependencies{
+  @extend %blh;
+  display: block;
+  font-size: 12px;
+  padding-top: 9px;
+  padding-bottom:3px;
+}
+
+.declared-at{
+  
+}
+
+.dependencies{
+  
 }
 
 .m-subheader{
@@ -79,11 +102,19 @@
 
 .argument-list{
   list-style: none;
+  padding-left:0;
+  margin-bottom:17px;
   .code-example{
     @extend %expandable;
   }
   > li + li{
     margin-top:24px;
+  }
+  li{
+    margin-top:0;
+  }
+  .m-text{
+    padding-bottom: 6px
   }
 }
 
@@ -96,7 +127,7 @@
 .argument-details{
   margin-top:-2px;
   @extend %clearfix;
-  h4, dl{
+  h3, dl{
     float:left;
   }
   .type, .property + dd{
@@ -174,4 +205,28 @@
 
 pre{
   background-color:#fff9f7;
+}
+
+.code-example{
+  margin-top:5px;
+  margin-bottom:17px;
+}
+
+.m-method{
+  padding-top:5px;
+  h2{
+    margin:0;
+  }
+  .declared-at{
+    padding-bottom:10px;
+  }
+  .code-example{
+    margin-bottom:0;
+  }
+  .method-arguments{
+    margin-top:5px;
+  }
+  .argument-list{
+    margin-bottom:5px;
+  }
 }

@@ -50,14 +50,14 @@
       </ul>
     </nav>
     <div role="main">
-      <header class="project_name">
-        <h1><strong>Project Name</strong> <span>Docs</span></h1>
-      </header>
-      <article class="project_description">
+      <section class="project_description" role="banner">
+        <h1 class="project_name">Project Name</h1>
         <h2 class="accessible" id="project_description">Description</h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
         <a href="#" class="show_more">Show more details</a>
-      </article>
+      </section>
+
+      
       <%= yield %>
     </div>
     <%= javascript_include_tag  "all" %>

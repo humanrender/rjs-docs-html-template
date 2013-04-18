@@ -8,9 +8,22 @@ $blh2:$base_line_height * 2;
 
 %plb { padding-left:40px; }
 %prb { padding-right:40px; }
+
 %phb { 
   @extend %plb;
   @extend %prb;
+}
+
+%pblh2{
+  padding-bottom:$blh2;
+}
+
+%mlb { margin-left:40px; }
+%mrb { margin-right:40px; }
+
+%mhb { 
+  @extend %mlb;
+  @extend %mrb;
 }
 
 .accessible{
@@ -120,6 +133,9 @@ $nav_width:214px;
   padding-bottom:60px;
   > *{
     @extend %phb;
+  }
+  > header{
+    @extend %pblh2;
   }
 }
 

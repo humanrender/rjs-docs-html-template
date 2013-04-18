@@ -1,6 +1,6 @@
 //= require_tree ./dependencies/
 //= require_tree ./lib/
-//= require ./development/
+//= require ./development
 
 $(document).on("ready", function(){
 
